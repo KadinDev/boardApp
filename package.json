@@ -9,12 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@paypal/react-paypal-js": "^7.4.2",
+    "date-fns": "^2.25.0",
+    "firebase": "8.8.1",
     "next": "11.1.2",
+    "next-auth": "^3.29.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "sass": "^1.42.1"
   },
   "devDependencies": {
+    "@types/next-auth": "^3.15.0",
+    "@types/node": "^16.10.3",
+    "@types/react": "^17.0.27",
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "11.1.2",
+    "typescript": "^4.4.3"
   }
 }

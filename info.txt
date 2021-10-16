@@ -1,0 +1,53 @@
+
+- yarn add create next-app nomeDoProjeto
+
+- para rodar o projeto:
+yarn dev
+
+limpando forma padrão como veio para iniciar o projeto
+-deletado pasta styles
+-deletado o vercel.svg da pasta public
+-deletado pasta api dentro de pages
+-deletado o import styles dentro do _app.js
+- e limpa o index.js deixando apenas:
+export default function Home() {
+  return (
+    <div>
+      <h1> primeiro projeto com next js </h1>
+    </div>
+  )
+}
+
+=========================================
+
+Adicionando typescript
+yarn add typescript @types/react @types/node -D
+
+Adicionando sass
+yarn add sass
+
+Adicionando biblioteca para icons
+yarn add react-icons
+
+
+====================================================
+Adicionando firebase
+yarn add firebase@^8.8.1
+
+foi criado o projeto boardApp no firebase.
+no local o sountamerica es1 é o do Brasil.
+e em Regras no seu app no firebase vc digita até quando quer o banco de
+dados funcionando:
+allow read, write: if
+          request.time < timestamp.date(2025, 11, 10);
+
+
+====================================================
+Trabalando com datas
+yarn add date-fns
+
+==================================================
+
+Depois de criar e configurar o que foi preciso no site do paypal, instala
+a biblioteca do paypal
+yarn add @paypal/react-paypal-js

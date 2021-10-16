@@ -1,0 +1,171 @@
+.container {
+    max-width: 1120px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #17181f;
+    border-radius: 6px;
+    width: 80%;
+    animation: tasks ease-in-out 0.6s;
+    
+    
+    .warnText {
+        color: #ffb800;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 1.1rem;
+
+        button {
+            margin-left: 5px;
+            background: transparent;
+            border: 0;
+        }
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input {
+            width: 90%;
+            height: 40px;
+            background-color: #20212c;
+            border: 1px solid #424242;
+            border-radius: 6px;
+            padding: 3px 10px;
+            color: #fff;
+        }
+
+        button {
+            margin-left: 10px;
+            width: 8%;
+            height: 40px;
+            border: 0;
+            background-color: #ffb800;
+            border-radius: 6px;
+            filter: brightness(80%);
+            transition: filter 0.2s;
+            
+            &:hover {
+                filter: brightness(100%);
+            }
+        }
+    }
+
+    h1 {
+        color: #fff;
+        margin-top: 1rem;
+        font-size: 18px;
+    }
+
+    .taskList {
+        background-color: #20212c;
+        margin: 1rem 0;
+        padding: 0.7rem;
+        border-radius: 7px;
+        animation: tasksList ease-in-out 1.4s;
+
+        p {
+            cursor: pointer;
+            color: #f2f6fc;
+            font-size: 1rem;
+            line-height: 150%; // padrão para ficar boa a leitura, caso seja uma descrição enorme
+            opacity: 1;
+            transition: opacity 0.2s;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        .actions {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 1rem;
+
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                time {
+                    color: #ffb000;
+                    margin-left: 5px;
+                    margin-right: 1rem;
+                }
+            }
+
+            button {
+                background: transparent;
+                border: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                & + button {
+                    margin-left: 10px;
+                }
+
+                span {
+                    margin-left: 5px;
+                    color: #fff;
+                    cursor: pointer;
+                }
+
+                span:hover {
+                    filter: brightness(0.7);
+                }
+            }
+        }
+    }
+}
+
+.vipContainer {
+    max-width: 1120px;
+    width: 80%;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #17181f;
+    border-radius: 6px;
+
+    h3 {
+        color: #ffb000;
+        font-size: 1.5rem;
+    }
+
+    div {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+
+        time {
+            color: #fff;
+            font-size: 1rem;
+            padding: 10px;
+        }
+    }
+}
+
+
+// animations
+@keyframes tasks {
+    0% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes tasksList {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
